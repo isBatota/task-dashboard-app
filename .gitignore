@@ -1,70 +1,12 @@
-# Build results
-[Dd]ebug/
-[Rr]elease/
-x64/
-x86/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
+# Monorepo root – repo-wide only. App-specific rules:
+# - Backend: apps/backend/TaskApp.Api/.gitignore
+# - Frontend: apps/frontend/task-app-ui/.gitignore
 
-# Visual Studio
-.vs/
-*.user
-*.userosscache
-*.sln.docstates
-
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# Rider
-.idea/
-*.sln.iml
-
-# NuGet
-*.nupkg
-*.snupkg
-**/[Pp]ackages/*
-!**/[Pp]ackages/build/
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# .NET
-*.dll
-*.exe
-*.pdb
-*.cache
-*.log
-*.vspscc
-*.vssscc
-.builds
-*.pidb
-*.svclog
-*.scc
-
-# User-specific
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# ASP.NET
-ScaffoldingReadMe.txt
-
-# Windows
+# OS
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
-
-# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -74,6 +16,15 @@ $RECYCLE.BIN/
 .env.local
 .env.*.local
 *.env
+
+# Editor / IDE (root workspace)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.idea/
 
 # Misc
 *.bak
